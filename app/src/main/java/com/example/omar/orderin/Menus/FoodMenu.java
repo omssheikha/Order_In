@@ -35,4 +35,31 @@ public class FoodMenu
         food.addAll(item);
     }
 
+    public String getMenuName()
+    {
+        return menuName;
+    }
+
+    public ArrayList<FoodItem> getFood()
+    {
+        return food;
+    }
+
+    public FoodItem getFood(int i)
+    {
+        return food.get(i);
+    }
+
+    public ArrayList<FoodMenu> getSubMenus()
+    {
+        return subMenus;
+    }
+
+    public FoodMenu getSubMenus(int i)
+    {
+        return subMenus.get(i);
+    }
+
+
+
 }

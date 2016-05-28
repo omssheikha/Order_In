@@ -1,4 +1,4 @@
-package com.example.omar.orderin.General;
+package com.example.omar.orderin.Rating;
 
 import com.example.omar.orderin.Users.User;
 

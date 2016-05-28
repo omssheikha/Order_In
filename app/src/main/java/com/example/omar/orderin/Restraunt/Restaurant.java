@@ -11,6 +11,7 @@ import com.example.omar.orderin.Users.User;
 
 public class Restaurant
 {
+    int id;
     int rating;
     GpsLocation location;
     String name, address;
@@ -18,15 +19,21 @@ public class Restaurant
     User owner;
 
 
-    public Restaurant(int rating, GpsLocation location, String name, String address, FoodMenu menu,
-                      User owner)
+    public Restaurant(int id, int rating, GpsLocation location, String name, String address
+            ,FoodMenu menu,User owner)
     {
+        this.id = id;
         this.rating = rating;
         this.location = location;
         this.name = name;
         this.address = address;
         this.menu = menu;
         this.owner = owner;
+    }
+
+    public int getId()
+    {
+        return id;
     }
 
     public int getRating()

@@ -1,17 +1,55 @@
 package com.example.omar.orderin.Menus;
 
-import com.example.omar.orderin.General.Ratings;
-import com.example.omar.orderin.General.Review;
+import com.example.omar.orderin.Rating.RatingAndReviews;
 
-/**
- * Created by Omar on 24/05/2016.
- */
 public class FoodItem
 {
-    Ratings rating;
-    Review[] review;
+    int id;
+    RatingAndReviews ratingAndReviews;
     FoodTags tags;
     String[] allergies;
     FoodItemProfile profile;
+    GymProperties properties;
 
+
+    public FoodItem(int id, RatingAndReviews ratingAndReviews, FoodTags tags, String[] allergies,
+                    FoodItemProfile profile, GymProperties properties)
+    {
+        this.id = id;
+        this.ratingAndReviews = ratingAndReviews;
+        this.tags = tags;
+        this.allergies = allergies;
+        this.profile = profile;
+        this.properties = properties;
+    }
+
+    public int getId()
+    {
+        return id;
+    }
+
+    public RatingAndReviews getRatingAndReviews()
+    {
+        return ratingAndReviews;
+    }
+
+    public FoodTags getTags()
+    {
+        return tags;
+    }
+
+    public String[] getAllergies()
+    {
+        return allergies;
+    }
+
+    public FoodItemProfile getProfile()
+    {
+        return profile;
+    }
+
+    public GymProperties getProperties()
+    {
+        return properties;
+    }
 }

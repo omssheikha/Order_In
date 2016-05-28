@@ -1,20 +1,21 @@
 package com.example.omar.orderin;
 
-import com.example.omar.orderin.General.Review;
+import com.example.omar.orderin.Rating.Review;
 import com.example.omar.orderin.Users.User;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
 
 
 public class ReviewTest {
 
     private static final String SAMPLE_REVIEW = "The food was ga7ed";
+    private User sampleUser = mock(User.class);
 
-
-    protected static Review makeSampleReview()
+    protected Review makeSampleReview()
     {
-        return new Review(UserTest.makeUser(),SAMPLE_REVIEW);
+        return new Review(sampleUser,SAMPLE_REVIEW);
     }
 
     @Test
@@ -34,6 +35,5 @@ public class ReviewTest {
     public void getUser()
     {
         Review r = makeSampleReview();
-        //TODO: finish user class so that this can be tested name vs name.
     }
 }
