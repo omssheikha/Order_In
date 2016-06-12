@@ -40,7 +40,7 @@ public class Soura {
 
     private void convertImageToString()
     {
-        ByteArrayOutputStream baos=new  ByteArrayOutputStream();
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
         image.compress(Bitmap.CompressFormat.PNG,100, baos);
         byte [] b=baos.toByteArray();
         imageString =Base64.encodeToString(b, Base64.DEFAULT);
